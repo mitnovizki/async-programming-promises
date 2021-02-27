@@ -30,6 +30,10 @@ server.use("/iterating", (req, res) => {
   res.sendFile(path.join(__dirname + "/iterating.html"));
 });
 
+server.use("/functions", (req, res) => {
+  res.sendFile(path.join(__dirname + "/functions.html"));
+});
+
 server.use("/service-worker.js", (req, res) =>
   res.sendFile(path.join(__dirname + "/service-worker.js"))
 );
