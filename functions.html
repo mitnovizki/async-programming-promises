@@ -24,21 +24,36 @@
     <button class="bg-pink mr2" onclick="bind()">bind</button>
     <button class="bg-pink mr2" onclick="declaration_expression()">declaration VS expression</button>
     <button class="bg-pink mr2" onclick="closures()">closures</button>
-    <button class="bg-pink mr2" onclick="chain()">Promise Chain</button>
-    <button class="bg-pink mr2" onclick="chainCatch()">Chain Catch</button>
-    <button class="bg-pink mr2" onclick="final()">Final Update</button>
+    <button class="bg-pink mr2" onclick="set()">set</button>
+    <button class="bg-pink mr2" onclick="arrow()">arrow functions</button>
+
+    <button class="bg-pink mr2" onclick="iife()">IIFE</button>
+    <button class="bg-pink mr2" onclick="map()">map</button>
+    <button class="bg-pink mr2" onclick="reduce()">reduce</button>
+    <button class="bg-pink mr2" onclick="thisThat()">this and that</button>
+    <button class="bg-pink mr2" onclick="final()">+</button>
+
+    <button class="bg-pink mr2" onclick="final()">+</button>
+    <button class="bg-pink mr2" onclick="final()">+</button>
+    <button class="bg-pink mr2" onclick="final()">+</button>
+    <button class="bg-pink mr2" onclick="final()">+</button>
+    <button class="bg-pink mr2" onclick="final()">+</button>
   </div>
   <div class="results w-50 ml4 mt4 pa4">
     <h1>Results</h1>
   </div>
   <script type="module">
-    import { bind, declaration_expression, closures, chain, chainCatch, final } from "./src/functions.mjs";
+    import { bind, declaration_expression, closures, set, arrow, iife, map, reduce, thisThat, final } from "./src/functions.mjs";
 
     window.bind = bind;
     window.declaration_expression = declaration_expression;
     window.closures = closures;
-    window.chain = chain;
-    window.chainCatch = chainCatch;
+    window.set = set;
+    window.arrow = arrow;
+    window.iife = iife;
+    window.map = map;
+    window.reduce = reduce;
+    window.thisThat = thisThat
     window.final = final;
   </script>
 </body>
