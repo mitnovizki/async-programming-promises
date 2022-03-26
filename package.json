@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon ./index.js",
-    "secondary": "cross-env PORT=3001 nodemon ./index.js"
+    "secondary": "cross-env PORT=3001 nodemon ./index.js",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -20,9 +22,11 @@
   "dependencies": {
     "cross-env": "^7.0.2",
     "express": "^4.17.1",
-    "json-server": "^0.15.1"
+    "json-server": "^0.15.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
-  }
+  },
+  "snyk": true
 }
